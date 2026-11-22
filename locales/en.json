@@ -1,0 +1,41 @@
+{
+  "_language_name": "English",
+  "_rtl": false,
+  "missing_openpyxl": "The 'openpyxl' package is missing. Run:  pip install openpyxl",
+  "pick_title": "Choose a folder to scan",
+  "pick_prompt": "Enter the path of a folder to scan: ",
+  "no_folder": "No valid folder was selected.",
+  "scanning": "Scanning: {root} ...",
+  "progress": "  {scanned:,} files scanned, {found:,} matches",
+  "excel_limit": "Reached Excel's maximum number of rows, stopping.",
+  "sheet_files": "Files",
+  "sheet_errors": "Errors",
+  "headers": [
+    "File name",
+    "Location",
+    "Open file",
+    "Open folder",
+    "Name length (incl. extension)",
+    "Full path length",
+    "At limit ({max})?"
+  ],
+  "open_file": "Open file",
+  "open_folder": "Open folder",
+  "yes": "Yes",
+  "no": "No",
+  "err_headers": [
+    "Path",
+    "Error"
+  ],
+  "done": "Done. Found {count:,} files with names of {min} characters or more (incl. extension). {at_limit:,} of them are at the {max}-character limit.",
+  "errors_note": "{count:,} locations could not be read - see the 'Errors' sheet.",
+  "saved": "Report saved to: {path}",
+  "press_enter": "Press Enter to close...",
+  "arg_desc": "Find files with very long names and export them to Excel.",
+  "arg_folder": "folder to scan",
+  "arg_min": "minimum file name length, incl. extension (default {default})",
+  "arg_out": "output Excel file name",
+  "arg_lang": "interface language (default: system language)",
+  "save_title": "Save the report as",
+  "cancelled_save": "No location chosen - saving to the default location."
+}
