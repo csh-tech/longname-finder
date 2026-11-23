@@ -113,6 +113,21 @@ PowerShell **as Administrator**, then restart the computer:
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
 
+Or set it manually in the Registry Editor:
+
+1. Press **Win+R**, type `regedit` and press Enter. Approve the permission prompt.
+2. Go to this key (you can paste it into the address bar at the top of the window):
+   ```
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+   ```
+3. On the right, look for **`LongPathsEnabled`**:
+   - **If it exists:** double-click it, set the value to `1` and click OK.
+   - **If it doesn't exist:** right-click an empty area → **New** → **DWORD (32-bit) Value**,
+     name it `LongPathsEnabled` and set its value to `1`.
+4. Restart the computer.
+
+If the value is already `1`, long paths are already enabled and nothing needs to change.
+
 Note that File Explorer itself may still not fully support long paths even with
 this setting enabled.
 
